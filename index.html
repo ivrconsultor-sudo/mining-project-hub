@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mining Project Hub LatAm</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#1b1b1b;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+button{
+background:#c79c3a;
+border:none;
+padding:15px 30px;
+font-size:16px;
+margin-top:25px;
+cursor:pointer;
+}
+
+section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.columns{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:6px;
+flex:1;
+min-width:250px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:6px;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+input, select, textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+footer{
+background:#1b1b1b;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Mining Project Hub LatAm</h1>
+
+<p>
+Conectamos proyectos mineros de Latinoamérica con inversionistas y socios estratégicos.
+</p>
+
+<a href="#formulario">
+<button>Enviar Proyecto Minero</button>
+</a>
+
+</header>
+
+<section>
+
+<h2>¿Qué hacemos?</h2>
+
+<p style="text-align:center; max-width:700px; margin:auto;">
+Identificamos oportunidades en proyectos mineros y conectamos titulares con inversionistas interesados en desarrollar activos mineros en Latinoamérica. Evaluamos información inicial y facilitamos la estructuración de oportunidades de inversión.
+</p>
+
+</section>
+
+<section>
+
+<h2>¿Para quién es esta plataforma?</h2>
+
+<div class="columns">
+
+<div class="card">
+<h3>Titulares Mineros</h3>
+<p>
+Personas o empresas que poseen títulos mineros o proyectos y buscan inversionistas o socios estratégicos.
+</p>
+</div>
+
+<div class="card">
+<h3>Exploradores</h3>
+<p>
+Geólogos o promotores que han identificado prospectos mineros y buscan capital para exploración.
+</p>
+</div>
+
+<div class="card">
+<h3>Inversionistas</h3>
+<p>
+Inversionistas interesados en oportunidades mineras en Latinoamérica.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>¿Cómo funciona?</h2>
+
+<div class="columns">
+
+<div class="card">
+<h3>1. Enviar proyecto</h3>
+<p>Complete el formulario con la información básica del proyecto.</p>
+</div>
+
+<div class="card">
+<h3>2. Evaluación inicial</h3>
+<p>Realizamos una revisión preliminar de la información.</p>
+</div>
+
+<div class="card">
+<h3>3. Contacto</h3>
+<p>Nos comunicamos con el titular para ampliar detalles técnicos.</p>
+</div>
+
+<div class="card">
+<h3>4. Conexión</h3>
+<p>Presentamos oportunidades a inversionistas interesados.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="formulario">
+
+<h2>Enviar Proyecto Minero</h2>
+
+<form action="https://formspree.io/f/xlgppkbe" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre completo" required>
+
+<input type="email" name="email" placeholder="Email de contacto" required>
+
+<input type="text" name="telefono" placeholder="Teléfono / WhatsApp">
+
+<input type="text" name="pais" placeholder="País donde se ubica el proyecto">
+
+<select name="mineral">
+<option>Mineral principal</option>
+<option>Oro</option>
+<option>Cobre</option>
+<option>Litio</option>
+<option>Hierro</option>
+<option>Manganeso</option>
+<option>Otro</option>
+</select>
+
+<select name="estado">
+<option>Estado legal del proyecto</option>
+<option>Título minero</option>
+<option>Solicitud en trámite</option>
+<option>Mina informal</option>
+<option>Prospecto geológico</option>
+</select>
+
+<select name="etapa">
+<option>Etapa del proyecto</option>
+<option>Exploración</option>
+<option>Evaluación</option>
+<option>Producción</option>
+</select>
+
+<textarea name="descripcion" rows="5" placeholder="Describa brevemente el proyecto"></textarea>
+
+<button type="submit">Enviar Proyecto</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+Mining Project Hub LatAm
+</p>
+
+<p>
+Medellín – Colombia
+</p>
+
+<p style="font-size:12px;">
+La información enviada será tratada de manera confidencial. La plataforma no garantiza la viabilidad económica de los proyectos.
+</p>
+
+</footer>
+
+</body>
+</html>
