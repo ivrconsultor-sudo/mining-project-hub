@@ -33,7 +33,7 @@ max-width:700px;
 margin:auto;
 }
 
-button{
+.cta{
 background:#c79c3a;
 border:none;
 padding:15px 30px;
@@ -83,6 +83,15 @@ border:1px solid #ccc;
 border-radius:4px;
 }
 
+button{
+background:#c79c3a;
+border:none;
+padding:15px;
+font-size:16px;
+cursor:pointer;
+width:100%;
+}
+
 footer{
 background:#1b1b1b;
 color:white;
@@ -105,7 +114,7 @@ Conectamos proyectos mineros de Latinoamérica con inversionistas y socios estra
 </p>
 
 <a href="#formulario">
-<button>Postular Proyecto Minero</button>
+<button class="cta">Registrar Proyecto Minero</button>
 </a>
 
 </header>
@@ -141,9 +150,9 @@ Geólogos o promotores que han identificado prospectos mineros y buscan capital 
 </div>
 
 <div class="card">
-<h3>Inversionistas</h3>
+<h3>Operadores</h3>
 <p>
-Inversionistas interesados en oportunidades mineras en Latinoamérica.
+Operaciones mineras que requieren inversión para expansión o desarrollo.
 </p>
 </div>
 
@@ -164,12 +173,12 @@ Inversionistas interesados en oportunidades mineras en Latinoamérica.
 
 <div class="card">
 <h3>2. Evaluación inicial</h3>
-<p>Realizamos una revisión preliminar de la información.</p>
+<p>Realizamos una revisión preliminar de la información técnica y legal.</p>
 </div>
 
 <div class="card">
 <h3>3. Contacto</h3>
-<p>Nos comunicamos con el titular u oferente para ampliar detalles técnicos.</p>
+<p>Nos comunicamos con el titular u oferente para ampliar detalles del proyecto.</p>
 </div>
 
 <div class="card">
@@ -187,29 +196,48 @@ Inversionistas interesados en oportunidades mineras en Latinoamérica.
 
 <form action="https://formspree.io/f/mnjggywl" method="POST">
 
+<h3>Datos del oferente</h3>
+
 <input type="text" name="nombre" placeholder="Nombre completo del oferente" required>
 
 <input type="email" name="email" placeholder="Email de contacto" required>
 
 <input type="text" name="telefono" placeholder="Teléfono / WhatsApp">
 
+<h3>Ubicación del proyecto</h3>
+
 <input type="text" name="pais" placeholder="País donde se ubica el proyecto">
 
-<input type="text" name="pais" placeholder="Ciudad o lugar donde se ubica el proyecto">
+<input type="text" name="ciudad" placeholder="Ciudad o región donde se ubica el proyecto">
+
+<h3>Información del proyecto</h3>
 
 <select name="mineral">
-<option>Seleccione el Mineral principal</option>
+<option>Seleccione el mineral principal</option>
 <option>Oro</option>
 <option>Cobre</option>
 <option>Carbón</option>
 <option>Esmeraldas</option>
 <option>Manganeso</option>
+<option>Hierro</option>
+<option>Otro</option>
+</select>
+
+<input type="text" name="area" placeholder="Área aproximada del proyecto (hectáreas)">
+
+<select name="deposito">
+<option>Tipo de depósito</option>
+<option>Aluvial</option>
+<option>Veta</option>
+<option>Pórfido</option>
+<option>Skarn</option>
+<option>Estratiforme</option>
 <option>Otro</option>
 </select>
 
 <select name="estado">
 <option>Estado legal del proyecto</option>
-<option>Título minero</option>
+<option>Título minero vigente</option>
 <option>Solicitud en trámite</option>
 <option>Mina informal</option>
 <option>Prospecto geológico</option>
@@ -222,6 +250,15 @@ Inversionistas interesados en oportunidades mineras en Latinoamérica.
 <option>Producción</option>
 </select>
 
+<select name="informacion">
+<option>Información técnica disponible</option>
+<option>Informes geológicos</option>
+<option>Muestreos</option>
+<option>Perforaciones</option>
+<option>Mapas geológicos</option>
+<option>Ninguna</option>
+</select>
+
 <textarea name="descripcion" rows="5" placeholder="Describa brevemente el proyecto"></textarea>
 
 <button type="submit">Enviar Proyecto</button>
@@ -232,16 +269,12 @@ Inversionistas interesados en oportunidades mineras en Latinoamérica.
 
 <footer>
 
-<p>
-Mining Project Hub LatAm
-</p>
+<p><strong>Mining Project Hub LatAm</strong></p>
 
-<p>
-Medellín – Colombia
-</p>
+<p>Medellín – Colombia</p>
 
 <p style="font-size:12px;">
-La información enviada será tratada de manera confidencial. La plataforma no garantiza la viabilidad económica de los proyectos.
+La información enviada será tratada de manera confidencial. La plataforma realiza únicamente una revisión preliminar de la información y no garantiza la viabilidad económica de los proyectos.
 </p>
 
 </footer>
